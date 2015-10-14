@@ -1,0 +1,7 @@
+http://scikit-learn.org/stable/tutorial/machine_learning_map/
+
+This is apparently the one I should use. Apparently scales better than SVC with linear kernel.
+http://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVC.html#sklearn.svm.LinearSVC
+
+Tips on improving SVC/SVM, including some optimisations:
+http://scikit-learn.org/stable/modules/svm.html#tips-on-practical-use

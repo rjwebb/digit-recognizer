@@ -1,0 +1,17 @@
+MNIST test results
+
+----------
+http://scikit-learn.org/stable/modules/random_projection.html
+
+
+Gaussian Random Projection, with eps=0.5
+->
+Radial Basis Function SVC
+
+5-fold cross validation:
+[0.95499999999999996, 0.95940476190476187, 0.95488095238095239, 0.95452380952380955, 0.95630952380952383]
+
+Took about ~440 seconds to run each SVC
+Not sure how long the GRP took
+
+----------
