@@ -54,6 +54,8 @@ def gaussrp_svc():
 
     scores = []
 
+    # separate out the 'splitting input up' stage into its own function
+    # could return the result as a generator, to save memory
     for i, (train_keys, test_keys) in enumerate(kf):
         print "iteration %d" % i
 
@@ -68,6 +70,10 @@ def gaussrp_svc():
         test_data = scale(np.array(test[:,1:], dtype=np.float_))
         test_labels = test[:,0]
 
+        # end of 'splitting input up' section
+
+        # then the training / testing stage can just be made into a functional thing
+        # and be run in parallel
 
         # train GRP
         print "doing gaussian random projection..."
